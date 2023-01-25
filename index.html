@@ -16,7 +16,7 @@
               <div class="sensor"></div>
               <div class="flex">
                 <h5 style="color: white">CVV</h5>
-                <button></button>
+                <button class="inputCVV"></button>
               </div>
               <div class="img">
                 <img src="visa.png" alt="" width="40px" height="30px" />
@@ -30,28 +30,30 @@
               <img src="chip.png" alt="" width="40px" height="30px" />
               <img src="visa.png" alt="" width="40px" height="30px" />
             </div>
-            <span>################</span>
+            <span class="hasil-input-name">################</span>
             <div class="input-flex-username">
               <h5>CARD HOLDER</h5>
               <h5>EXPRES</h5>
             </div>
             <div class="input-flex-mm-yy">
-              <h5>USERNAME</h5>
-              <h5 style="margin-left: 160px">MM</h5>
-              <h5>YY</h5>
+              <h5 class="hasil-holder" style="text-transform: uppercase">USERNAME</h5>
+              <div class="MM-YY-flex">
+                <h5 class="mm">MM</h5>
+                <h5 class="yy">YY</h5>
+              </div>
             </div>
           </div>
         </div>
         <div class="card-content">
           <span>Card Number</span>
-          <input type="text" maxlength="16" />
+          <input class="input-number" type="text" maxlength="16" style="font-size: 18px" />
           <span>Card Holder</span>
-          <input type="text" maxlength="16" />
+          <input style="font-size: 18px" class="holder-input" type="text" maxlength="24" />
         </div>
         <div class="card-mm-yy-cvv">
           <div>
             <h5 style="color: rgb(133, 131, 127)">Card Holder</h5>
-            <select name="" id="">
+            <select class="month" name="" id="">
               <option value="MONTH">MONTH</option>
               <option value="01">1</option>
               <option value="02">2</option>
@@ -69,20 +71,17 @@
           </div>
           <div>
             <h5 style="color: rgb(133, 131, 127)">Card Holder</h5>
-            <select name="" id="">
+            <select class="year" name="" id="">
               <option value="YEAR">YEAR</option>
-              <option value="01">1</option>
-              <option value="02">2</option>
-              <option value="03">3</option>
-              <option value="04">4</option>
-              <option value="05">5</option>
-              <option value="06">6</option>
-              <option value="07">7</option>
-              <option value="08">8</option>
-              <option value="09">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
             </select>
           </div>
           <div>
@@ -91,7 +90,7 @@
           </div>
         </div>
         <div class="submit">
-          <button type="submit"><span>Submit</span></button>
+          <button class="submit" type="submit"><span>Submit</span></button>
         </div>
       </div>
     </div>
