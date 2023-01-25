@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.card {
+    box-shadow: 1px 1px 10px black;
+    margin-top: 30px;
+    width: 40%;
+    background-color: #fff;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-content span{
+    font-size: 14px;
+    color: rgb(133, 131, 127);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.card-content input {
+    margin-top: 4px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 169, 163);
+}
+
+.card-mm-yy-cvv {
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.card-mm-yy-cvv select{
+    margin-top: 4px;
+    padding: 4px;
+    width: 150px;
+    border: 1px solid rgb(173, 169, 163);
+}
+.card-mm-yy-cvv input{
+    padding: 4px;
+    margin-top: 4px;
+    width: 150px;
+    border: 1px solid rgb(173, 169, 163);
+
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.submit button {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 8px;
+    background: linear-gradient(45deg, deeppink,darkviolet);
+}
+
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back-content {
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 20px;
+    height: 200px;
+    width: 340px;
+    top: 0;
+    background: url('map.png'), linear-gradient(45deg, deeppink,darkviolet);
+    background-size: cover;
+    background-position: center;
+    transition: 1.2s;
+    transform: perspective(100%);
+    transform: rotateY(-180deg);
+    box-shadow: 1px 1px 10px black;
+
+}
+
+.back-box .sensor {
+    margin-top: 20px;
+    padding: 14px;
+    width: 100%;
+    background-color: black;
+}
+.back-box .flex{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+.back-box button{
+    border: 1px solid rgb(173, 169, 163);
+    border-radius: 5px;
+    padding: 13px;
+    width: 100%;
+}
+
+.back-box .img{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+
+.card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-front-content {
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 20px;
+    height: 200px;
+    width: 340px;
+    top: 0;
+    background: url('map.png'), linear-gradient(45deg, deeppink,darkviolet);
+    background-size: cover;
+    background-position: center;
+    transition: 1.2s;
+    backface-visibility: hidden;
+    transform: perspective(100%);
+    box-shadow: 1px 1px 5px black;
+
+}
+
+
+/*  */
+
+/*  */
+
+.img-front {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-front-content span{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+
+.input-flex-username {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+.input-flex-mm-yy {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: -35px;
+}
+
+@media screen and (max-width:800px) {
+    .card {
+        width: 100%;
+    }
+    .card-mm-yy-cvv select {
+        width: 90px;
+    }
+    .card-mm-yy-cvv input{
+        width: 90px;
+    }
+    .card-back-content {
+        margin-top: 40px;
+    }
+    .card-front-content {
+         margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .card{
+        margin-top: 30px;
+    }
+    .card-back-content {
+        margin-top: 25px;
+
+    }
+    .card-front-content {
+         margin-top: 25px;
+    }
+}
